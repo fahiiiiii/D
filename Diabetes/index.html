@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Self-Assessment</title>
+    <style>
+        .container{
+            border: 2px rgb(241, 182, 72);
+            background-color: rgb(236, 229, 150);
+            padding: 34px;
+            margin: 34px auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva','Franklin Gothic Medium', 'Verdana','sans-serif';
+           
+            
+        }
+
+        .btn{
+            border: 2px rgb(30, 30, 187);
+            color: aliceblue;
+            background-color: rgb(182, 118, 34);
+            padding: 6px;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            cursor: pointer;
+            border-radius : 15px;
+            text-align: center;
+            position: fixed;
+            left: 40%;
+            animation-name: inherit;
+
+        }
+        .btn:hover{
+            color: white;
+            background-color: black;
+        }
+        a{
+            text-decoration: none;
+            color: #4b4b4b;
+            
+        }
+        button{
+            position: fixed;
+            left: 41%;
+        }
+        *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+a:hover{
+    color:#227093;
+    font-weight: bold;
+}
+nav{
+    background:rgb(32, 39, 78);
+    height: 80px;
+    width: 100%;
+
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 4px;
+    text-transform: uppercase;
+
+}
+nav ul li a:active,nav ul li a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+       
+        
+.checkbtn{
+    font-size:30px;
+    color:white;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+
+}
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+        color: white;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
+@media (max-width:858px)
+{
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+       transition: all.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #292e31;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+img{
+    
+    background-size:cover ;
+    height: calc(100vh - 80px);
+}
+    form{
+        padding-top: 120px;
+        text-align: right;
+        font-size: 30px;
+        
+    }
+    input{
+        width: 250px;
+        height: 40px;
+        font-size: 30px;
+    }
+       
+    </style>
+</head>
+
+<body style="background-color: rgb(170, 187, 206);" >
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Diabetes self-assessment</label>
+
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a class="active"  href="#">About</a></li>
+            <li><a class="active"  href="#">Services</a></li>
+            <li><a class="active"  href="#">Contact Us</a></li>
+            <li><a class="active"  href="#">Feedback</a></li>
+        </ul>
+    </nav>
+  <!--<h1 > Diabetes self-assessment</h1> <br><br><br>-->
+  <br><br>
+    <font size="5" style="font-family: 2em; ">Take this self-assessment if you are suffering from some diabetes symptoms ( like <a href="https://www.webmd.com/diabetes/polyuria-too-much-urine" target="_blank">polyuria</a> , <a href="https://en.wikipedia.org/wiki/Polyphagia" target="_blank">polyphagia</a> , <a href="https://en.wikipedia.org/wiki/Polydipsia" target="_blank">polydipsia </a>  etc). <br>
+
+You will get a recommendation on what to do next. <br>
+
+For self assessment purposes or  you can print off or email your results to your email. <br>
+
+You can also take it on behalf of someone else. <br></font>
+<br><br><br>
+<div class="container" id="cont1">
+
+    <p><font size="4" >
+        The self-assessment is only meant as an aid and cannot diagnose you. Anyone who is sick or has any symptoms of illness, including those not listed in this screening tool, should seek assessment from a health care provider if needed and consult a health care provider if you have medical questions.</font>
+    </p>
+</div>
+<br>
+
+    
+    <a href="finalHomepage.html"class="btn">Start Self-Assessment</a>
+    
+
+
+</body>
+</html>
